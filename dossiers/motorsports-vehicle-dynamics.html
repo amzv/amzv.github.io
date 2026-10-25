@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorsports Simulation & Vehicle Dynamics | Angel Mario Zarate Villazon</title>
+  <meta name="description" content="Technical Dossier: High-Fidelity Vehicle Dynamics, Minimum Lap-Time Simulation, and Driver-in-the-Loop Modeling with TRD, Honda, and NASCAR.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Editorial Masthead Bar -->
+  <aside class="masthead-bar" aria-label="Location and affiliation">
+    <div class="masthead-inner">
+      <div class="masthead-meta">
+        <span>Atlanta, Georgia</span>
+        <span>•</span>
+        <span>Case Study III: Vehicle Dynamics & Motorsports Simulation</span>
+      </div>
+      <div class="masthead-contact-links">
+        <a href="../index.html" class="masthead-contact-link">← Return to Overview</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand-link">
+        <span class="brand-title">Angel Mario Zarate Villazon</span>
+        <span class="brand-subtitle">Case Study III // High-Fidelity Vehicle Dynamics & Real-Time Simulators</span>
+      </a>
+
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu [≡]</button>
+
+      <nav class="site-nav">
+        <a href="../index.html" class="nav-link">Overview</a>
+        <a href="../index.html#case-studies" class="nav-link active">Case Studies</a>
+        <a href="../about.html" class="nav-link">Leadership & Bio</a>
+        <a href="../publications.html" class="nav-link">Publications</a>
+        <div class="nav-actions">
+          <a href="../assets/Mario_Zarate_Resume.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Resume [PDF]</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Dossier Hero -->
+    <section class="dossier-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">INDEX</a> / <a href="../index.html#dossiers">DOSSIERS</a> / <span>REF-03: MOTORSPORTS SIMULATION</span>
+        </div>
+
+        <h1 class="dossier-page-title">High-Fidelity Vehicle Dynamics & Real-Time Driver-in-the-Loop Simulators</h1>
+        <p class="dossier-page-lead">
+          Pioneering multi-fidelity simulation architectures, optimal control lap-time optimization, and machine learning surrogate models for trackside decision support and real-time simulators with Toyota Racing Development, Honda R&D, and a NASCAR OEM.
+        </p>
+
+        <!-- Technical Specification Grid -->
+        <div class="dossier-spec-grid">
+          <div class="spec-item">
+            <span class="spec-label">DOMAIN</span>
+            <span class="spec-val">Vehicle Dynamics & Optimal Control</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">PARTNERS & SPONSORS</span>
+            <span class="spec-val">Toyota Racing Dev, Honda, NASCAR</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">RECOGNITIONS</span>
+            <span class="spec-val">Daniel P. Schrage Award (2x)</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">TIMELINE</span>
+            <span class="spec-val">September 2022 – June 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Content Body -->
+    <div class="container">
+      <div class="dossier-content-grid">
+        <div class="content-primary">
+
+          <!-- Section: The Challenge -->
+          <article class="content-block">
+            <h2>01 / The Real-Time Simulation Dilemma</h2>
+            <p>
+              In elite motorsport and advanced automotive engineering, the quest for competitive advantage is increasingly waged inside simulation environments. High-fidelity multi-body chassis models and non-linear tire formulations (e.g., thermal-mechanical tire models with transient relaxation length and camber thrust) provide exceptional realism. However, their computational overhead historically prevented them from executing in hard real-time (1000 Hz) required for interactive <strong>Driver-in-the-Loop (DIL)</strong> simulators or high-iteration trackside setup optimizations.
+            </p>
+            <p>
+              Conversely, simplified point-mass or bicycle models run with instantaneous speed but fail to capture subtle transient vehicle behavior—such as curb strikes, aero pitch-sensitivity under braking, or tire grip degradation over stints—leading to sub-optimal engineering setups and poor driver correlation.
+            </p>
+          </article>
+
+          <!-- Section: TRD Vehicle Simulation -->
+          <article class="content-block">
+            <h2>02 / Toyota Racing Development (TRD): Minimum Lap-Time Optimization</h2>
+            <p>
+              As a Vehicle Simulation Intern at Toyota Racing Development (Salisbury, NC), I worked under the mentorship of a former Formula 1 technical director to investigate novel optimization methodologies for minimum lap-time simulation (MLTS).
+            </p>
+            <p>
+              Using optimal control formulations and collocated transcription techniques, we examined how high-fidelity vehicle dynamic constraints could be incorporated directly into lap-time solvers without causing convergence divergence or excessive runtimes. The findings directly informed the team’s methodology for simulation-driven chassis and aero setup configurations.
+            </p>
+
+            <blockquote class="quote-dossier">
+              “Investigated novel optimization approaches for minimum lap-time simulation using high-fidelity vehicle models under the mentorship of a former Formula 1 technical director; findings informed the team’s approach to simulation-driven setup decisions.”
+              <cite>— Toyota Racing Development Project Log</cite>
+            </blockquote>
+          </article>
+
+          <!-- Section: Honda & NASCAR Research -->
+          <article class="content-block">
+            <h2>03 / Honda R&D: Multi-Fidelity DIL Architecture</h2>
+            <p>
+              Collaborating with Honda engineers, our research team at Georgia Tech’s Aerospace Systems Design Laboratory investigated workflow inefficiencies in real-time driver-in-the-loop simulation. We conceptualized a testing workflow to identify the primary drivers of simulation error and computational cost.
+            </p>
+            <p>
+              To solve the fidelity-speed dilemma, we developed a tool that employed <strong>machine learning algorithms to dynamically guide modeling strategy</strong>—seamlessly substituting fast surrogates for computationally expensive sub-models when high fidelity was unneeded, and engaging high-order physics when chassis dynamics entered critical regimes. This work was published at the SAE World Congress 2026.
+            </p>
+
+            <h3 style="margin-top: 2rem;">NASCAR OEM High-Fidelity Simulation & Tire Sensitivity</h3>
+            <p>
+              I led a multi-disciplinary graduate research team to integrate high-fidelity vehicle models into racing car simulations for a major NASCAR OEM. By combining global sensitivity analysis with machine learning surrogates, our team preserved decision-making speed without sacrificing accuracy, earning the prestigious <strong>Daniel P. Schrage Award for Excellence</strong>.
+            </p>
+            <p>
+              The following year, I returned as technical advisor for a repeat award-winning team, focusing specifically on high-fidelity tire models: formulating an optimal control sensitivity framework to quantify lap-time performance variance against tire model parameters, published at the American Modelica Conference and SAE Technical Paper 2026-01-0214.
+            </p>
+          </article>
+
+          <!-- Section: Publications -->
+          <article class="content-block">
+            <h2>04 / Peer-Reviewed Publications</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.75rem;">
+                <strong>SAE World Congress 2026:</strong><br>
+                <em>Zarate Villazon, Angel M., Ian Brown, Michael Balchanos, and Dimitri Mavris</em>, “Lap Time Performance Sensitivity to Tire Model Parameters: An Optimal Control Framework for Model Selection and Calibration,” SAE Technical Paper 2026-01-0214.
+              </li>
+              <li style="margin-bottom: 0.75rem;">
+                <strong>SAE World Congress 2026:</strong><br>
+                <em>Balchanos, Michael, Mariam Emara, Angel Zarate Villazon, and Dimitri Mavris</em>, “Integrating Optimization and Model Fidelity Selection Methods for Real-Time Driver-in-the-Loop Vehicle Simulators,” SAE Technical Paper 2026-01-0621.
+              </li>
+              <li style="margin-bottom: 0.75rem;">
+                <strong>American Modelica Conference:</strong><br>
+                High-fidelity vehicle and tire dynamic model integration for motorsport applications.
+              </li>
+            </ul>
+
+            <div style="margin-top: 2rem;">
+              <a href="../publications.html" class="btn btn-primary">
+                Explore Full Publications Archive [→]
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sidebar Specifications -->
+        <aside class="content-secondary">
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">RESEARCH CREDENTIALS</h3>
+            <ul class="telemetry-list" style="border: none; padding-top: 0;">
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Internship</span>
+                <span class="telemetry-list-val">Toyota Racing Development (TRD)</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Sponsors</span>
+                <span class="telemetry-list-val">Honda R&D, NASCAR OEM</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Grand Challenge</span>
+                <span class="telemetry-list-val">100+ Graduate Peers, 45+ Teams</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Award</span>
+                <span class="telemetry-list-val">Daniel P. Schrage Award (2x Winner)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">TECHNICAL TOOLS</h3>
+            <div class="matrix-tags" style="gap: 0.5rem;">
+              <span class="tag tag-orange">Minimum Lap-Time Sim</span>
+              <span class="tag">Optimal Control</span>
+              <span class="tag">Driver-in-the-Loop</span>
+              <span class="tag">Pacejka '02 Tire Model</span>
+              <span class="tag">Modelica</span>
+              <span class="tag">Machine Learning Surrogates</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">NEXT DOSSIER</h3>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Continue exploring flagship engineering dossiers:</p>
+            <a href="colibri-nanosatellite.html" class="btn btn-outline btn-sm" style="width: 100%;">
+              Dossier 04: Colibri CubeSat [→]
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© 2026 ANGEL MARIO ZARATE VILLAZON. ALL RIGHTS RESERVED.</span>
+      <a href="../index.html" class="footer-nav-link">RETURN TO OVERVIEW ↑</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

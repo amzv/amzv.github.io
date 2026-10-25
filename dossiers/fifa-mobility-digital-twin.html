@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup 2026 Mobility Digital Twin | Angel Mario Zarate Villazon</title>
+  <meta name="description" content="Technical Dossier: Mobility Digital Twin for pedestrian and vehicular traffic operations during the FIFA World Cup 2026 in Atlanta.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Editorial Masthead Bar -->
+  <aside class="masthead-bar" aria-label="Location and affiliation">
+    <div class="masthead-inner">
+      <div class="masthead-meta">
+        <span>Atlanta, Georgia</span>
+        <span>•</span>
+        <span>Case Study I: Urban Mobility Digital Twin</span>
+      </div>
+      <div class="masthead-contact-links">
+        <a href="../index.html" class="masthead-contact-link">← Return to Overview</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand-link">
+        <span class="brand-title">Angel Mario Zarate Villazon</span>
+        <span class="brand-subtitle">Case Study I // FIFA World Cup 2026 Mobility Digital Twin</span>
+      </a>
+
+      <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu [≡]</button>
+
+      <nav class="site-nav">
+        <a href="../index.html" class="nav-link">Overview</a>
+        <a href="../index.html#case-studies" class="nav-link active">Case Studies</a>
+        <a href="../about.html" class="nav-link">Leadership & Bio</a>
+        <a href="../publications.html" class="nav-link">Publications</a>
+        <div class="nav-actions">
+          <a href="../assets/Mario_Zarate_Resume.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Resume [PDF]</a>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Dossier Hero -->
+    <section class="dossier-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">INDEX</a> / <a href="../index.html#dossiers">DOSSIERS</a> / <span>REF-01: FIFA 2026 DIGITAL TWIN</span>
+        </div>
+
+        <h1 class="dossier-page-title">Mobility Digital Twin for FIFA World Cup 2026</h1>
+        <p class="dossier-page-lead">
+          A real-time data-calibrated decision-support framework reconciling competing priorities across stadium operations, public safety officers, and municipal transportation authorities for downtown Atlanta's mega-event operations.
+        </p>
+
+        <!-- Technical Specification Grid -->
+        <div class="dossier-spec-grid">
+          <div class="spec-item">
+            <span class="spec-label">DOMAIN</span>
+            <span class="spec-val">Urban Mobility Digital Twin</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">STAKEHOLDERS</span>
+            <span class="spec-val">GWCCA, GTPD, GDOT & Stadium</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">KEY IMPACT</span>
+            <span class="spec-val">Days to Minutes Decision Turnaround</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">TIMELINE</span>
+            <span class="spec-val">April 2025 – July 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Content Body -->
+    <div class="container">
+      <div class="dossier-content-grid">
+        <div class="content-primary">
+
+          <!-- Section: The Challenge -->
+          <article class="content-block">
+            <h2>01 / The Operational Challenge</h2>
+            <p>
+              With Atlanta welcoming the world for eight matches during the 2026 FIFA World Cup—the city’s largest multi-week sporting event since the 1996 Olympic Games—downtown transportation infrastructure faces an extraordinary stress test. Tens of thousands of international fans, vehicular traffic, public transit, and emergency response assets converge on the Georgia World Congress Center Authority (GWCCA) campus and Mercedes-Benz Stadium simultaneously.
+            </p>
+            <p>
+              Historically, event safety and traffic plans relied on static playbook assumptions constructed weeks in advance. However, mega-events inherently present fluid, non-stationary dynamics: an unexpected gate delay, road closure, weather disruption, or sudden influx of rideshare vehicles cascades throughout downtown Atlanta in minutes. Conventional traffic analysis tools required multiple days of post-hoc simulation, rendering them useless for active, on-the-ground operational decisions.
+            </p>
+          </article>
+
+          <!-- Section: Stakeholder Alignment -->
+          <article class="content-block">
+            <h2>02 / Stakeholder Alignment & Decision Framing</h2>
+            <p>
+              Before writing code or architecting simulation pipelines, the foundational requirement was framing the true decision bottleneck. Reconciling competing operational priorities was essential:
+            </p>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.5rem;"><strong>On-the-ground Police Officers & Public Safety:</strong> Prioritized rapid crowd dispersion, clear emergency access corridors, and safety buffer zones.</li>
+              <li style="margin-bottom: 0.5rem;"><strong>Parking Operations & Stadium Management:</strong> Required continuous ingress throughput to avoid perimeter roadway gridlock and maximize gate utilization.</li>
+              <li style="margin-bottom: 0.5rem;"><strong>Georgia Department of Transportation (GDOT):</strong> Focused on arterial highway off-ramps and balancing regional commute traffic with event congestion.</li>
+            </ul>
+            <p>
+              Through repeated stadium site visits, shadowing officers during major events, and conducting prototype-driven interviews, we mapped the trade-offs into an interactive decision-support ontology. Rather than providing black-box outputs, the tool had to explain <em>why</em> a specific intervention (such as reversing lane flow on Northside Drive or gating a specific pedestrian crosswalk) would mitigate congestion without triggering secondary bottlenecks.
+            </p>
+
+            <blockquote class="quote-dossier">
+              “Our custom-built interface allows us to build different scenarios and simulate different approaches, in real time, as conditions change. Once we determine their rules of behavior, our simulations evaluate different traffic interventions to avoid bottlenecks, traffic slowdowns, and unwanted crowdedness.”
+              <cite>— Dr. Michael Balchanos, ASDL Senior Research Engineer & Project Lead</cite>
+            </blockquote>
+          </article>
+
+          <!-- Section: Technical Architecture -->
+          <article class="content-block">
+            <h2>03 / Technical Architecture & Digital Twin Engine</h2>
+            <p>
+              The digital twin integrates multi-source empirical data feeds with high-speed behavioral simulation models:
+            </p>
+            <p>
+              <strong>Data Calibration:</strong> Leveraged historical and live sensor feeds, camera feeds, campus cycle track data, and event attendance profiles to calibrate agent behavioral parameters (pedestrian walking speeds, gap acceptance, vehicular following dynamics).
+            </p>
+            <p>
+              <strong>Real-Time Simulation Layer:</strong> Running in the background, fast-time simulation surrogate models evaluate proposed traffic interventions and predict bottleneck propagation 30 to 60 minutes into the future.
+            </p>
+            <p>
+              <strong>Interactive Decision Dashboard:</strong> Provided command-center operators with an intuitive interface to test "what-if" scenarios on the fly, reducing evaluation turnaround from days of manual modeling to minutes of interactive experimentation.
+            </p>
+          </article>
+
+          <!-- Section: Institutional Impact -->
+          <article class="content-block">
+            <h2>04 / Impact & Institutional Recognition</h2>
+            <p>
+              The mobility digital twin was delivered to the Georgia World Congress Center Authority, Mercedes-Benz Stadium operations, and the Georgia Tech Police Department. The system directly informs traffic plans and crowd management policies across all eight World Cup games.
+            </p>
+            <p>
+              Furthermore, as noted by university leadership, the platform provides long-term value beyond the tournament, serving as an enduring decision engine for campus growth, pedestrian infrastructure planning, and regional transit optimization.
+            </p>
+
+            <div style="margin-top: 2rem;">
+              <a href="https://coe.gatech.edu/news/2026/06/engineers-use-digital-twins-and-simulation-technology-support-atlantas-world-cup" class="btn btn-primary" target="_blank" rel="noopener">
+                Read Georgia Tech College of Engineering Feature Article [↗]
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sidebar Specifications -->
+        <aside class="content-secondary">
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">PROJECT SPECIFICATIONS</h3>
+            <ul class="telemetry-list" style="border: none; padding-top: 0;">
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Project Code</span>
+                <span class="telemetry-list-val">GT-ASDL-FIFA26</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Lead Lab</span>
+                <span class="telemetry-list-val">Aerospace Systems Design Lab</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Advisors</span>
+                <span class="telemetry-list-val">Dr. M. Balchanos, Dr. D. Mavris</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Team</span>
+                <span class="telemetry-list-val">M. Zarate, H. Mali, N. Geneti, B. Ravikanti</span>
+              </li>
+              <li class="telemetry-list-item">
+                <span class="telemetry-list-key">Deployment Venue</span>
+                <span class="telemetry-list-val">GWCCA / Mercedes-Benz Stadium</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">EXTERNAL RESOURCES</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li>
+                <a href="https://coe.gatech.edu/news/2026/06/engineers-use-digital-twins-and-simulation-technology-support-atlantas-world-cup" class="link-out" target="_blank" rel="noopener">
+                  GT News Article [↗]
+                </a>
+              </li>
+              <li>
+                <a href="https://www.asdl.gatech.edu/" class="link-out" target="_blank" rel="noopener">
+                  ASDL Official Website [↗]
+                </a>
+              </li>
+              <li>
+                <a href="../assets/Mario_Zarate_Resume.pdf" class="link-out" target="_blank" rel="noopener">
+                  Download Full CV [PDF]
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">NEXT DOSSIER</h3>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Continue exploring flagship systems engineering dossiers:</p>
+            <a href="lunar-surface-mobility-fleet.html" class="btn btn-outline btn-sm" style="width: 100%;">
+              Dossier 02: Lunar Fleet [→]
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© 2026 ANGEL MARIO ZARATE VILLAZON. ALL RIGHTS RESERVED.</span>
+      <a href="../index.html" class="footer-nav-link">RETURN TO OVERVIEW ↑</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
